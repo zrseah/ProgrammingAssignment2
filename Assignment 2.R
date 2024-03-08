@@ -24,13 +24,3 @@ cacheSolve <- function(x, ...) {
   inv
 }
 
-# Create a special "matrix" object
-m <- makeCacheMatrix(matrix(c(1, 2, 3, 4), nrow = 2))
-
-# Compute the inverse using cacheSolve
-cacheSolve(m)
-# This will compute the inverse and cache it
-
-# Retrieve the inverse from the cache
-cacheSolve(m)
-# This will retrieve the cached inverse without recomputation
